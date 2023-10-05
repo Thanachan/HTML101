@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment</title>
+
+    <style>
+        table {
+
+            border-collapse: collapse;
+            border: 2px solid #222222;
+            width: 60%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            padding: 20px;
+        }
+
+        select {
+            width: 50px;
+            height: 20px;
+            position: relative;
+            top: -70px;
+            right: -20px;
+        }
+
+        button {
+            width: 200px;
+            height: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    f
+    <h1>Payment Methods</h1>
+    <table>
+        <tr>
+            <th style="width: 550px;">
+                <div style="position: relative; text-align: left;">
+                    Item
+                </div>
+            </th>
+            <th>
+                <div style="position: relative; text-align: center;">
+                    Quantity
+                </div>
+            </th>
+            <th>
+                <div style="position: relative; text-align: right;">
+                    Price (THB)
+                </div>
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                <div style="position: relative; text-align: left;">
+                    <b>Toy Name</b> by Brand<br>
+                    <p style="word-spacing: 44px;">
+                        Gender Age
+                    </p>
+                    <p style="color:Tomato;"><b>In Stock / Out of Stock</b></p>
+                    <p style="color:DodgerBlue">Delete</p>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <select>
+                        <option value="Quantity1">1</option>
+                        <option value="Quantity2">2</option>
+                        <option value="Quantity3">3</option>
+                    </select>
+                </div>
+            </td>
+            <td>
+                <div style="position: relative; top: -71px; right: -85px;">
+                    100.00
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div style="position: relative; text-align: left;">
+                    <b>Toy Name</b> by Brand<br>
+                    <p style="word-spacing: 44px;">
+                        Gender Age
+                    </p>
+                    <p style="color:Tomato;"><b>In Stock / Out of Stock</b></p>
+                    <p style="color:DodgerBlue">Delete</p>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <select>
+                        <option value="Quantity1">1</option>
+                        <option value="Quantity2">2</option>
+                        <option value="Quantity3">3</option>
+                    </select>
+                </div>
+            </td>
+            <td>
+                <div style="position: relative; top: -71px; right: -85px;">
+                    100.00
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div style="position: relative; top: -25px;">
+        <p>
+            Shipping Method: Kerry Express<br>
+        </p>
+    </div>
+        <p><b>Select payment methods</p></b>
+        <input type="radio" id="credit or debit" name="fav_language" value="Credit or Debit Cards">
+        <label for="credit or debit"><b>Credit or Debit Cards</b></label><br><br>
+        <input type="radio" id="paypal" name="fav_language" value="Paypal">
+        <label for="paypal"><b>Paypal</b></label><br><br>
+        <input type="radio" id="line Pay" name="fav_language" value="Line Pay">
+        <label for="line Pay"><b>Line Pay</b></label>
+
+        <div style="position: relative; top: -599px; right: -940px;">
+            <b>Order Summar</Summary></b>
+        </div>
+        <div style="position: relative; top: -590px; right: -955px;">
+            <p>
+                Items(2) <span style="color: tomato;">150.00</span>THB
+            </p>
+            <p style="position: relative; left: -2px;">
+                Shipping Fee: <span style="color: tomato;">150.00</span>THB
+            </p>
+        </div>
+        <div>
+            <hr style="position: relative; top: -599px; right: -310px; width: 180px; ">
+        </div>
+        <p style="position: relative; top: -599px; right: -955px;">
+            <b>Order total: <b style="color: tomato;">200.00</b>THB</b>
+        </p>
+        </div>
+        <div style="position: relative; top: -160px; right: -900px;">
+           
+                <button onclick="myFunction()">Place your order</button>
+        </div>
+
+
 </body>
+
 </html>
